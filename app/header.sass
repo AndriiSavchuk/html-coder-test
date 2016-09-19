@@ -5,12 +5,13 @@
 //First screen styles
 
 .header
+    padding-bottom: 30px
+
     .top-line
         background-color: $color-secondary
         padding: 30px 0
         line-height: 1
         min-width: 100%
-
         .company-name
             display: inline-block
             .logo
@@ -25,7 +26,6 @@
                     line-height: 1.4
             .logo:hover
                 transform: $transform
-
         .info-block
             float: right
             padding-top: 10px
@@ -50,7 +50,6 @@
                     span:hover
                         border-bottom: 1px dashed #fff
                         transform: $transform
-
             .icons-top
                 float: right
                 margin-left: 65px
@@ -66,9 +65,10 @@
 
     .main-header
         position: relative
-        height: 520px
+        min-height: 560px
         background: url("img/header-bg.jpg") center center
         background-size: cover
+        margin-bottom: 30px
         .promotion
             position: absolute
             bottom: 45px
@@ -79,7 +79,7 @@
             height: 230px
             text-align: center
             font-family: $font-family-secondary
-            background-color: $color-tertiary
+            background-color: rgba(255, 242, 0, 0.7)
             border-radius: 50%
             h4
                 font-size: 25px
@@ -94,10 +94,73 @@
                 font-size: 24px
 
     .bottom-line
+        position: relative
         .hotel
-            .stars
-                span
+            float: left
+            .hotel-top-block
+                font-family: $font-family-secondary
+                font-size: 35px
+                h3
                     display: inline-block
-                    background: url("img/star-icon.png") no-repeat
-                    width: 30px
-                    height: 30px
+
+                    border-bottom: 1px solid #000
+                .stars
+                    display: inline-block
+                    margin-left: 30px
+                    span
+                        display: inline-block
+                        background: url("img/star-icon.png") no-repeat
+                        width: 30px
+                        height: 30px
+                p
+                    display: inline-block
+                    margin-left: 30px
+            .hotel-bottom-block
+                margin-top: 22px
+                .hotel-grade
+                    float: left
+                    padding-top: 8px
+                    h5
+                        font-weight: bold
+                    p
+                        color: $color-tertiary
+                        font-weight: bold
+                .overall-mark
+                    width: 50px
+                    height: 50px
+                    background-color: $color-secondary
+                    display: inline-block
+                    margin-left: 30px
+                    padding: 8px 12px 0 8px
+                    border-radius: 3px
+                    span
+                        color: #fff
+                        font-size: 24px
+                        font-weight: bold
+                .hotel-grade-marks
+                    display: inline-block
+                    .mark
+                        display: inline-block
+                        margin-left: 25px
+                        line-height: 1.1
+                        h4
+                            color: $color-tertiary
+                            text-transform: uppercase
+                            font-size: 12px
+                            font-weight: bold
+                            padding-top: 5px
+                        span
+                            font-size: 18px
+                            font-weight: bold
+        .sun-days
+            position: absolute
+            right: 95px
+            bottom: 25px
+            span
+                font-family: $font-family-tertiary
+                font-size: 100px
+                color: $color-tertiary
+                line-height: 1
+            p
+                font-size: 30px
+                line-height: 1.1
