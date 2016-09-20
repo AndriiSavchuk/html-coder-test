@@ -3,6 +3,7 @@
 @import "libs"
 @import "base"
 
+
 /* Section Challenges */
 
 .challenges
@@ -33,30 +34,32 @@
                 &:last-child
                     font-size: 20px
 
+
 /* Section Physics */
 
 .physics
-    padding: 67px 0 47px 0
+    padding: 60px 0 47px 0
     h2
         font-family: $font-family-secondary
         font-size: 50px
         line-height: 1
         margin-bottom: 25px
+
     .text-wrapper
         .articles
             width: 75%
             float: left
             p
                 line-height: $line-height-paragraph
-                margin-bottom: 24px
+                margin-bottom: 20px
                 &:last-child
-                    margin-top: 20px
+                    margin-top: 17px
             .article1
                 h5
                     font-size: 16px
                     font-weight: bold
                     line-height: 1.3
-                    margin-bottom: 24px
+                    margin-bottom: 20px
             .article2
                 h4
                     font-size: 22px
@@ -72,8 +75,8 @@
                 h5
                     font-size: 16px
                     font-weight: bold
-
             .table
+                margin-bottom: 25px
                 tr
                     &:first-child
                         background-color: #ebebeb
@@ -90,7 +93,8 @@
                     &:first-child
                         font-size: 11px
                         font-weight: bold
-
+            .info
+                margin-bottom: 5px
             ul
                 li
                     margin-top: 5px
@@ -112,6 +116,31 @@
             p
                 font-size: 20px
                 color: $color-tertiary
+
+
+/* Footer */
+
+.footer
+    padding-top: 10px
+    padding-bottom: 30px
+    border-top: 1px solid #000
+    .test
+        display: inline-block
+        font-size: 12px
+        a
+            color: $color-secondary
+
+    .icons-bottom
+        float: right
+        ul
+            li
+                display: inline-block
+                width: 32px
+                height: 32px
+                margin-left: 10px
+                transition: $transition
+            li:hover
+                transform: $transform
 
 
 //Always at end
